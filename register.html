@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí thi đấu</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent Marker:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+<body>
+    <header>
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </div>
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li><a href="./home.html">Giới thiệu</a></li>
+                <li><a href="./register.html">Đăng kí</a></li>
+                <li><a href="./rules.html">Thể lệ</a></li>
+                <li><a href="./highlight.html">Highlight</a></li>
+                <li><a href="./about.html">Ban tổ chức</a></li>
+                <li><a href="./prize.html">Giải thưởng</a></li>
+                <div class="close-btn">
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                </div>
+            </ul>
+        </nav>
+        <div class="branch">
+            Dark-Meme
+        </div>
+    </header> <!-- header -->
+
+    <section>
+        <div class="container">
+
+            <div class="title-box">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </div>
+                <div class="title">
+                    <div class="main-title">
+                        Chicken Championship Seri
+                    </div>
+                    <div class="sub-title">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        Giải chuồng gà
+                        <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="season">
+                    <img src="./images/season.png" alt="Season 2">
+                    <div class="join-btn">
+                        <a href="./register.html">Tham gia ngay!</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content-box">
+                <div class="box">
+                    <div class="caption">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        Cách đăng kí tham gia giải đấu
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            <b>Thời gian đăng kí sẽ diễn ra từ hôm nay (24/11/2021 - 30/11/2021)</b>
+                            <br>
+                            <b>Giải đấu dự kiến diễn ra trong Tháng 12 vào lúc 21h15 theo từng lịch đấu</b>
+                            <br> <br>
+                            - Bên cạnh nhà tài trợ, các thí sinh khi tham gia giải đấu ở mùa lần này sẽ đóng 5k/lượt
+                            (toàn bộ sẽ được chuyển thành phần thưởng) (có thể đóng góp hơn nếu muốn).
+                            <br>
+                            - Sở dĩ phải đóng phí tham gia để nhằm mong muốn các Member của chúng ta có trách nhiệm hơn
+                            khi đã đăng kí tham gia.
+                            <br> <br>
+                            - <b>Cách thức chuyển như sau:</b> (Ví momo: 0762871595- NGUYỄN THÀNH ĐẠT)
+                            <br>
+                            - <b>Cú pháp:</b> Tên ingame (ngắn gọn) + tên team + lời nhắn nhủ nếu có...
+                            <br> <br>
+                            Chúc mọi người có một tuần chuẩn bị thật bùng nổ cùng với Dark Memeee!!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- content holder -->
+
+    <script>
+        var nav = document.querySelector(".nav");
+        var menu = document.querySelector(".nav-menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+
+        menuBtn.addEventListener("click", () => {
+            nav.classList.add("active");
+            menu.classList.add("active");
+            console.log('click')
+        })
+
+        closeBtn.addEventListener("click", () => {
+            nav.classList.remove("active");
+            menu.classList.remove("active");
+        })
+
+        nav.addEventListener("click", (e) => {
+            if (e.target == nav) {
+                nav.classList.remove("active");
+                menu.classList.remove("active");
+            }
+        })
+
+    </script>
+</body>
+
+</html>
