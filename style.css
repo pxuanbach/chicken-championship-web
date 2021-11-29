@@ -69,7 +69,7 @@ header .branch {
   left: -100%;
   visibility: hidden;
   overflow-y: auto;
-  padding: 70px 12px;
+  padding: 80px 12px;
   height: 100vh;
   z-index: 999;
   transition: 0.5s;
@@ -78,6 +78,18 @@ header .branch {
 .nav-menu.active {
   left: 0;
   visibility: visible;
+}
+.nav-menu .logo{
+  display: block;
+  width: max-content;
+  color: #03989e;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  margin: 16px;
+}
+.nav-menu .logo img{
+  max-height: 50px;
 }
 .nav-menu .close-btn {
   display: block;
